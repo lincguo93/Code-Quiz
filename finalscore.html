@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="endgame.js"></script>
+    <title>Final Score</title>
+</head>
+<body>
+    <a href="index.html" id="highscore-btn" class="btn">Home</a>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name to save your score!</h2>
+                <input type="text" name = "name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <a href="index.html" class="btn">Play Again</a>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
